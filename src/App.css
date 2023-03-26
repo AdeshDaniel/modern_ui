@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
-  margin: 0;
   padding: 0;
+  margin: 0;
   scroll-behavior: smooth;
 }
 
@@ -15,54 +15,53 @@ a {
 }
 
 .gradient__bg {
-  /* ff 3.6+ */
   background: -moz-radial-gradient(
     circle at 3% 25%,
     rgba(0, 40, 83, 1) 0%,
-    rgba(4, 12, 24, 1) 100%
+    rgba(4, 12, 24, 1) 25%
   );
 
   /* safari 5.1+,chrome 10+ */
   background: -webkit-radial-gradient(
     circle at 3% 25%,
     rgba(0, 40, 83, 1) 0%,
-    rgba(4, 12, 24, 1) 100%
+    rgba(4, 12, 24, 1) 25%
   );
 
   /* opera 11.10+ */
   background: -o-radial-gradient(
     circle at 3% 25%,
     rgba(0, 40, 83, 1) 0%,
-    rgba(4, 12, 24, 1) 100%
+    rgba(4, 12, 24, 1) 25%
   );
 
   /* ie 10+ */
   background: -ms-radial-gradient(
     circle at 3% 25%,
     rgba(0, 40, 83, 1) 0%,
-    rgba(4, 12, 24, 1) 100%
+    rgba(4, 12, 24, 1) 25%
   );
 
   /* global 92%+ browsers support */
   background: radial-gradient(
     circle at 3% 25%,
     rgba(0, 40, 83, 1) 0%,
-    rgba(4, 12, 24, 1) 100%
+    rgba(4, 12, 24, 1) 25%
   );
 }
 
 .gradient__text {
-  color: var(--gradient-text);
+  background: var(--gradient-text);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.seciton__padding {
+.section__padding {
   padding: 4rem 6rem;
 }
 
-.seciton__margin {
+.section__margin {
   margin: 4rem 6rem;
 }
 
@@ -82,6 +81,7 @@ a {
     transform: scale(1);
   }
 }
+
 @keyframes scale-up-center {
   0% {
     -webkit-transform: scale(0.5);
@@ -94,21 +94,21 @@ a {
 }
 
 @media screen and (max-width: 700px) {
-  .seciton__padding {
+  .section__padding {
     padding: 4rem;
   }
 
-  .seciton__margin {
+  .section__margin {
     margin: 4rem;
   }
 }
 
 @media screen and (max-width: 550px) {
-  .seciton__padding {
+  .section__padding {
     padding: 4rem 2rem;
   }
 
-  .seciton__margin {
+  .section__margin {
     margin: 4rem 2rem;
   }
 }
